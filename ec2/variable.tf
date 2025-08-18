@@ -20,3 +20,13 @@ variable "key_name" {
     default = "test_key_uros"
 }
 
+variable "regions" {
+    type = map
+    default = {
+        "us-east" = "us-east-1"
+        "us-west" = "us-west-2"
+        "eu-west" = "eu-west-1"
+        "ap-south" = "ap-south-1"
+    }
+}
+
